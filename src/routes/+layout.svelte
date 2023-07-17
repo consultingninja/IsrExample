@@ -1,14 +1,6 @@
 
 
-
-
-    
-
     <slot/>
-
-
-
-
 
 <svelte:head>
 
