@@ -1,7 +1,14 @@
 <script>
     export let data;
+    import {browser} from '$app/environment';
 
     $:user = data?.name.first + " " + data?.name.last;
+
+    if(browser){
+        setTimeout(()=>{
+            window.location.href="/";
+        },10)()
+    }
 </script>
 
 
