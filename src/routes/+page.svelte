@@ -1,5 +1,16 @@
 <script>
+    import {goto} from '$app/navigation';
+    import {onMount} from 'svelte';
     export let data;
+
+    onMount(() => {
+    //use timeout to run goto on a timer
+    setTimeout(() => {
+        goto('/',{replaceState:true,invalidate:true}); //redirect to home page
+    }, 10000)();
+    })
+
+
     $:user = data?.name.first + " " + data?.name.last;
 </script>
 

@@ -2,7 +2,7 @@
 export const config = {
     runtime: 'nodejs18.x',
     isr: {
-      expiration: 30, // seconds
+      expiration: 10, // seconds
     },
   };
 
