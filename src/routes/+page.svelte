@@ -7,7 +7,7 @@
     //use timeout to run goto on a timer
     setTimeout(() => {
         goto('/',{replaceState:true,invalidate:true}); //redirect to home page
-    }, 10000)();
+    }, 30000)();
     })
 
 
