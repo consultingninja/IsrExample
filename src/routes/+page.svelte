@@ -1,10 +1,12 @@
 <script>
     export let data;
+
+    $:user = data?.name.first + " " + data?.name.last;
 </script>
 
 
 {#if data}
-    <h1>{data?.name.first + " " + data?.name.last }</h1>
+    <h1>{user}</h1>
     <p>{data?.email}</p>
 {:else}
 
